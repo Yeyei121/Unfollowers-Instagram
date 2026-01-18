@@ -1,8 +1,8 @@
-# Analizador de Seguidores de Instagram 📱
+# Analizador de Seguidores de Instagram 
 
 Aplicación profesional para analizar tus seguidores de Instagram y descubrir quién te dejó de seguir.
 
-## 🌟 Características
+## Características
 
 - ✅ Análisis completo de seguidores y seguidos
 - ✅ Identificación de usuarios que no te siguen de vuelta
@@ -15,30 +15,6 @@ Aplicación profesional para analizar tus seguidores de Instagram y descubrir qu
 ## 🏗️ Arquitectura
 
 Este proyecto ha sido desarrollado siguiendo **buenas prácticas de programación**:
-
-### Principios SOLID Aplicados
-
-- **S (Single Responsibility)**: Cada clase tiene una única responsabilidad
-  - `FollowerAnalyzer`: Solo analiza seguidores
-  - `StatisticsCalculator`: Solo calcula estadísticas
-  - `FileManager`: Solo gestiona archivos
-  - `ConsolePrinter`: Solo imprime en consola
-
-- **O (Open/Closed)**: Abierto para extensión, cerrado para modificación
-  - `ReportExporter`: Interfaz base para diferentes tipos de exportadores
-  - `TextReportExporter` y `JSONReportExporter`: Extensiones específicas
-
-- **L (Liskov Substitution)**: Las implementaciones pueden sustituir a sus interfaces
-  - Todas las clases que implementan interfaces pueden usarse indistintamente
-
-- **I (Interface Segregation)**: Interfaces específicas y cohesivas
-  - `IAuthenticationProvider`: Solo métodos de autenticación
-  - `ISessionManager`: Solo gestión de sesiones
-  - `IInstagramRepository`: Solo acceso a datos de Instagram
-
-- **D (Dependency Inversion)**: Dependencias de abstracciones, no de implementaciones
-  - Las clases dependen de interfaces (`IAuthenticationProvider`, `ISessionManager`)
-  - Inyección de dependencias en constructores
 
 ### Patrones de Diseño
 
@@ -72,13 +48,13 @@ src/
 └── app.py              # Aplicación principal
 ```
 
-## 📋 Requisitos
+## Requisitos
 
 - Python 3.8 o superior
 - Cuenta de Instagram
 - Navegador web (Chrome, Firefox, Edge, etc.)
 
-## 🔧 Instalación
+## Instalación
 
 1. **Clonar o descargar el proyecto**
 
@@ -92,7 +68,7 @@ cd Unfollowers_Instagram
 pip install -r requirements.txt
 ```
 
-## 🚀 Uso
+## Uso
 
 ### 1. Ejecutar la aplicación
 
@@ -131,11 +107,11 @@ Puedes exportar los resultados en diferentes formatos:
 - **Reporte JSON**: Datos estructurados para procesamiento
 - **Lista de unfollowers**: Solo usuarios que no te siguen
 
-## 📊 Ejemplo de Salida
+## Ejemplo de Salida
 
 ```
 =======================================================================
-📊 RESUMEN DEL ANÁLISIS
+RESUMEN DEL ANÁLISIS
 =======================================================================
 
 📈 ESTADÍSTICAS:
@@ -162,7 +138,7 @@ Puedes exportar los resultados en diferentes formatos:
 - No abuses de las solicitudes para evitar que Instagram bloquee temporalmente tu cuenta
 - Usa la aplicación de manera responsable
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Python 3.8+**: Lenguaje de programación
 - **Instaloader**: Biblioteca para interactuar con Instagram
@@ -170,22 +146,10 @@ Puedes exportar los resultados en diferentes formatos:
 - **Dataclasses**: Para modelos de datos inmutables
 - **ABC (Abstract Base Classes)**: Para definir interfaces
 
-## 📝 Licencia
-
-Este proyecto es de código abierto y está disponible para uso personal y educativo.
-
-## 🤝 Contribuciones
-
-Las contribuciones son bienvenidas. Por favor:
-1. Mantén los principios SOLID
-2. Documenta tu código
-3. Sigue el estilo de código existente
-4. Añade tests si es posible
-
 ## 📧 Soporte
 
 Si encuentras algún problema o tienes sugerencias, por favor abre un issue en el repositorio.
 
 ---
 
-**¡Disfruta analizando tus seguidores de Instagram! 📱✨**
+**¡Disfruta analizando tus seguidores de Instagram! **
