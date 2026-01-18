@@ -1,0 +1,28 @@
+# Configuración de la Aplicación
+
+app:
+  name: "Instagram Follower Analyzer"
+  version: "2.0.0"
+  author: "Your Name"
+
+# Configuración de directorios
+paths:
+  sessions_dir: "."
+  reports_dir: "."
+  
+# Configuración de reportes
+reports:
+  default_format: "txt"  # txt, json
+  auto_save: true
+  include_timestamp: true
+  
+# Configuración de análisis
+analysis:
+  show_progress: true
+  progress_interval: 50  # Mostrar progreso cada N usuarios
+  
+# Configuración de Instagram
+instagram:
+  rate_limit_delay: 1  # Segundos entre solicitudes (para evitar bloqueos)
+  max_retries: 3
+  timeout: 30  # Segundos
